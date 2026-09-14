@@ -233,7 +233,7 @@ function App() {
       <div className="support-row"><span>BUY ME A COFFEE</span><div className="support-buttons"><a className="support-button wise" href="https://wise.com/" target="_blank" rel="noreferrer" aria-label="Support via Wise">W</a><a className="support-button paypal" href="https://www.paypal.com/" target="_blank" rel="noreferrer" aria-label="Support via PayPal">P</a></div></div>
     </section>
 
-    <footer><a href="#top">ARIF ISKANDAR</a><p>DEVELOPER / BUILDER / DESIGNER</p><p>© {new Date().getFullYear()} — MELAKA, MALAYSIA</p><a href="#top">BACK TO TOP ↑</a></footer>
+    <footer><a href="#top">ARIF ISKANDAR</a><p>SOFTWARE ENGINEERING STUDENT / FULL-STACK DEVELOPER / AI AGENT BUILDER</p><p>© {new Date().getFullYear()} — MELAKA, MALAYSIA</p><a href="#top">BACK TO TOP ↑</a></footer>
   </main>
 }
 
