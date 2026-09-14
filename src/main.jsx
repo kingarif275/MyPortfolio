@@ -101,7 +101,14 @@ function Header() {
     <a className="brand" href="#top" aria-label="Arif Iskandar, home"><b>ARIF<br/>ISKANDAR</b></a>
     <nav className={open ? 'open' : ''} aria-label="Primary navigation">
       <a href="#about" onClick={() => setOpen(false)}>ABOUT</a>
-      <a href="#work" onClick={() => setOpen(false)}>WORK</a>
+      <div className="work-nav" onMouseEnter={() => setOpen(true)} onMouseLeave={() => setOpen(false)}>
+        <button className="work-trigger" aria-expanded={open} onClick={() => setOpen(!open)}>WORK</button>
+        <div className={`work-dropdown ${open ? 'open' : ''}`}>
+          <a href="#roblox-experience" onClick={() => setOpen(false)}>ROBLOX EXPERIENCE</a>
+          <a href="#website-systems" onClick={() => setOpen(false)}>WEBSITE AND SYSTEM</a>
+          <a href="#projects" onClick={() => setOpen(false)}>PROJECTS</a>
+        </div>
+      </div>
       <a href="#experience" onClick={() => setOpen(false)}>EXPERIENCE</a>
       <a href="#contact" onClick={() => setOpen(false)}>CONTACT</a>
     </nav>
@@ -155,7 +162,7 @@ function App() {
       <div id="work" className="statement">
         <h2>FROM TERRAIN TO SYSTEMS,<br/>I MAKE EXPERIENCES<br/>THAT FEEL ALIVE.</h2>
       </div>
-      <div className="project-grid">
+      <div className="project-grid" id="projects">
         {projects.map((p, i) => <a className={`project-card card-${i+1}`} href={p.url} target={p.url.startsWith('http')?'_blank':undefined} rel="noreferrer" key={p.title}>
           <img src={p.image} alt={`${p.title} project preview`} />
           <span className="project-index">0{i+1}</span>
@@ -175,7 +182,7 @@ function App() {
 
     <Chapter number="04" title="EXPERIENCE" className="experience">
       <div id="experience" className="statement"><h2>THE WORK IS<br/>THE EXPERIENCE.</h2></div>
-      <div className="experience-list">
+      <div className="experience-list" id="roblox-experience">
         {experience.map(item => <article className="experience-card" key={item.name}>
           <div className="experience-meta"><span>{item.index}</span><b>{item.type}</b></div>
           <div className="experience-body">
@@ -186,7 +193,7 @@ function App() {
           <a href={item.url} target="_blank" rel="noreferrer" aria-label={`${item.action}: ${item.name}`}><span>{item.action}</span><b>↗</b></a>
         </article>)}
       </div>
-      <div className="legacy-chapters">
+      <div className="legacy-chapters" id="website-systems">
         <div className="legacy-heading"><span>EARLIER CHAPTERS</span><p>The projects below remain part of the story: collaborative Roblox worlds, environment work and the associate communities that helped shape how I build.</p></div>
         <a href="https://www.roblox.com/groups/9068739/Bloxers-Supermarket#!/about" target="_blank" rel="noreferrer"><span>FORMER CHIEF DEVELOPER OFFICER</span><strong>BLOXXER SUPERMARKET</strong><b>↗</b></a>
         <a href="https://www.roblox.com/groups/6057477/SWTOR-The-Ancient-Sith-Empire#!/about" target="_blank" rel="noreferrer"><span>IMPERIAL ARCHITECT</span><strong>THE ANCIENT SITH EMPIRE</strong><b>↗</b></a>
