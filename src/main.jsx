@@ -5,10 +5,67 @@ import './styles.css'
 const projects = [
   { title: 'Terrain worlds', label: 'ENVIRONMENT DESIGN', image: '/work/terrain-1.jpg', url: '#work' },
   { title: 'Interface systems', label: 'UI / SCRIPTING', image: '/work/ui-1.jpg', url: '#work' },
-  { title: 'Ancient Sith Empire', label: 'IMPERIAL ARCHITECT', image: '/work/build-1.jpg', url: 'https://www.roblox.com/groups/6057477/SWTOR-The-Ancient-Sith-Empire#!/about' },
+  { title: 'Gameplay architecture', label: 'SERVER SYSTEMS', image: '/work/build-1.jpg', url: '#experience' },
   { title: 'World building', label: 'ROBLOX STUDIO', image: '/work/build-2.jpg', url: '#work' },
-  { title: 'Interactive systems', label: 'GAMEPLAY', image: '/work/ui-2.jpg', url: '#work' },
+  { title: 'Interaction design', label: 'PRODUCT UI', image: '/work/ui-2.jpg', url: '#work' },
   { title: 'Visual direction', label: 'DESIGN', image: '/work/terrain-2.jpg', url: '#work' },
+]
+
+const experience = [
+  {
+    index: '01',
+    type: 'ANDROID / AI AGENT',
+    name: 'SLASH',
+    summary: 'A local-first Android agent that combines natural-language conversation, accessibility-grounded actions, local GGUF models and Vertex AI with outcome verification.',
+    stack: ['JAVA', 'ANDROID', 'VERTEX AI', 'LLAMA.CPP'],
+    url: 'https://github.com/kingarif275/slash-android-agent',
+    action: 'VIEW SOURCE',
+  },
+  {
+    index: '02',
+    type: 'WEB PLATFORM',
+    name: 'UTEM ATECH',
+    summary: 'A platform for discovering and managing university training activities, with profiles, registration, collections, moderation and Firebase-backed access.',
+    stack: ['REACT', 'VITE', 'FIREBASE', 'CLOUD FUNCTIONS'],
+    url: 'https://www.atechutem.com',
+    action: 'VISIT LIVE SITE',
+  },
+  {
+    index: '03',
+    type: 'OPEN-SOURCE ROBLOX TOOLING',
+    name: 'ROUI TOOLKIT',
+    summary: 'A Roblox Studio plugin that scans interfaces, ranks UI issues by severity and produces actionable audit reports without modifying a creator’s game.',
+    stack: ['LUAU', 'ROJO', 'PLUGIN UI', 'AUTOMATED CHECKS'],
+    url: 'https://github.com/kingarif275/RoUI-Toolkit',
+    action: 'VIEW SOURCE',
+  },
+  {
+    index: '04',
+    type: 'AI LEARNING PRODUCT',
+    name: 'LUMINA',
+    summary: 'A personalised quiz and exercise experience built around Firebase and Vertex AI, including generated questions, image generation and resilient offline answer syncing.',
+    stack: ['REACT', 'FIREBASE', 'VERTEX AI', 'OFFLINE SYNC'],
+    url: 'https://github.com/kingarif275',
+    action: 'GITHUB PROFILE',
+  },
+  {
+    index: '05',
+    type: 'BUSINESS AUTOMATION',
+    name: 'NEXUS AI',
+    summary: 'A multi-surface WhatsApp operations platform spanning inbox workflows, contacts, automation, AI agents, channel configuration and workspace settings.',
+    stack: ['REACT', 'FIREBASE', 'WHATSAPP API', 'AI WORKFLOWS'],
+    url: 'https://nexus-ai-platform-arif.web.app',
+    action: 'VISIT LIVE SITE',
+  },
+  {
+    index: '06',
+    type: 'BOOKING PLATFORM',
+    name: 'STAYNEST',
+    summary: 'A Firebase-native accommodation platform with authentication, listings, booking validation, reviews, host operations and administrative workflows.',
+    stack: ['REACT', 'TYPESCRIPT', 'FIRESTORE', 'FIREBASE'],
+    url: 'https://staynest-beta-376917.web.app',
+    action: 'VISIT LIVE SITE',
+  },
 ]
 
 function DotWord({ word, label }) {
@@ -60,20 +117,20 @@ function App() {
       <div className="grid-scribble" aria-hidden="true" />
       <h1 id="hero-title" className="sr-only">Arif Iskandar — developer and builder</h1>
       <DotWord word="ARIF" label="ARIF" />
-      <p className="hero-kicker">DEVELOPER <span>+</span> BUILDER <span>+</span> DESIGNER</p>
+      <p className="hero-kicker">WEB APPS <span>+</span> AI AGENTS <span>+</span> INTERACTIVE SYSTEMS</p>
       <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><b>↓</b></a>
     </section>
 
     <Chapter number="01" title="INTRODUCTION" className="intro" >
       <div id="about" className="statement reveal">
-        <h2>I BUILD DIGITAL WORLDS<br/>WHERE CODE, DESIGN<br/>AND PLAY MEET.</h2>
+        <h2>I BUILD DIGITAL PRODUCTS<br/>WHERE SYSTEMS, DESIGN<br/>AND AI MEET.</h2>
       </div>
       <div className="intro-grid">
         <figure className="feature-media"><img src="/work/build-3.jpg" alt="A Roblox environment designed by Arif"/><figcaption>SELECTED ENVIRONMENT / ROBLOX STUDIO</figcaption></figure>
         <div className="copy-stack">
-          <p>I’m Arif Iskandar, a university student in Melaka, Malaysia, exploring digital and computer systems at UTeM.</p>
-          <p>My work moves between programming, interface design and world building. I enjoy turning a rough idea into something people can see, use and play.</p>
-          <p>Every project is a chance to solve a new problem—and make the final experience feel considered.</p>
+          <p>I’m Arif Iskandar, a digital and computer systems student at UTeM in Melaka, Malaysia.</p>
+          <p>My current work spans React and Firebase products, Android AI agents, and interactive systems for Roblox. I care about the complete path from architecture to the interface people actually use.</p>
+          <p>I learn by shipping: building the system, testing real flows, refining the rough edges and making the final experience feel considered.</p>
         </div>
       </div>
     </Chapter>
@@ -101,11 +158,17 @@ function App() {
     </Chapter>
 
     <Chapter number="04" title="EXPERIENCE" className="experience">
-      <div id="experience" className="statement"><h2>ROLES THAT SHAPED<br/>HOW I CREATE.</h2></div>
-      <div className="role-list">
-        <a href="https://www.roblox.com/groups/9068739/Bloxers-Supermarket#!/about" target="_blank" rel="noreferrer"><span>FORMER CHIEF DEVELOPER OFFICER</span><strong>BLOXXER SUPERMARKET</strong><b>↗</b></a>
-        <a href="https://www.roblox.com/groups/6057477/SWTOR-The-Ancient-Sith-Empire#!/about" target="_blank" rel="noreferrer"><span>IMPERIAL ARCHITECT</span><strong>THE ANCIENT SITH EMPIRE</strong><b>↗</b></a>
-        <a href="https://www.roblox.com/communities/17407473/The-Crimson-Organization#!/about" target="_blank" rel="noreferrer"><span>“THE ARCHITECT”</span><strong>THE CRIMSON ORGANIZATION</strong><b>↗</b></a>
+      <div id="experience" className="statement"><h2>THE WORK IS<br/>THE EXPERIENCE.</h2></div>
+      <div className="experience-list">
+        {experience.map(item => <article className="experience-card" key={item.name}>
+          <div className="experience-meta"><span>{item.index}</span><b>{item.type}</b></div>
+          <div className="experience-body">
+            <h3>{item.name}</h3>
+            <p>{item.summary}</p>
+            <ul aria-label={`${item.name} technologies`}>{item.stack.map(tag => <li key={tag}>{tag}</li>)}</ul>
+          </div>
+          <a href={item.url} target="_blank" rel="noreferrer" aria-label={`${item.action}: ${item.name}`}><span>{item.action}</span><b>↗</b></a>
+        </article>)}
       </div>
     </Chapter>
 
