@@ -170,6 +170,12 @@ function App() {
           <a href={item.url} target="_blank" rel="noreferrer" aria-label={`${item.action}: ${item.name}`}><span>{item.action}</span><b>↗</b></a>
         </article>)}
       </div>
+      <div className="legacy-chapters">
+        <div className="legacy-heading"><span>EARLIER CHAPTERS</span><p>The projects below remain part of the story: collaborative Roblox worlds, environment work and the associate communities that helped shape how I build.</p></div>
+        <a href="https://www.roblox.com/groups/9068739/Bloxers-Supermarket#!/about" target="_blank" rel="noreferrer"><span>FORMER CHIEF DEVELOPER OFFICER</span><strong>BLOXXER SUPERMARKET</strong><b>↗</b></a>
+        <a href="https://www.roblox.com/groups/6057477/SWTOR-The-Ancient-Sith-Empire#!/about" target="_blank" rel="noreferrer"><span>IMPERIAL ARCHITECT</span><strong>THE ANCIENT SITH EMPIRE</strong><b>↗</b></a>
+        <a href="https://www.roblox.com/communities/17407473/The-Crimson-Organization#!/about" target="_blank" rel="noreferrer"><span>“THE ARCHITECT”</span><strong>THE CRIMSON ORGANIZATION</strong><b>↗</b></a>
+      </div>
     </Chapter>
 
     <section id="contact" className="contact">
