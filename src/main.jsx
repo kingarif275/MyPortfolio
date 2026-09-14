@@ -3,12 +3,12 @@ import { createRoot } from 'react-dom/client'
 import './styles.css'
 
 const projects = [
-  { title: 'Terrain worlds', label: 'ENVIRONMENT DESIGN', image: '/work/terrain-1.jpg', url: '#work' },
+  { title: 'Terrain worlds', label: 'ENVIRONMENT DESIGN', image: '/work/forest-bridge.png', url: '#work' },
   { title: 'Interface systems', label: 'UI / SCRIPTING', image: '/work/ui-1.jpg', url: '#work' },
   { title: 'Gameplay architecture', label: 'SERVER SYSTEMS', image: '/work/build-1.jpg', url: '#experience' },
-  { title: 'World building', label: 'ROBLOX STUDIO', image: '/work/build-2.jpg', url: '#work' },
+  { title: 'World building', label: 'ROBLOX STUDIO', image: '/work/stone-arch.png', url: '#work' },
   { title: 'Interaction design', label: 'PRODUCT UI', image: '/work/ui-2.jpg', url: '#work' },
-  { title: 'Visual direction', label: 'DESIGN', image: '/work/terrain-2.jpg', url: '#work' },
+  { title: 'Visual direction', label: 'DESIGN', image: '/work/forest-road-wide.png', url: '#work' },
 ]
 
 const experience = [
@@ -141,7 +141,7 @@ function App() {
         <h2>I BUILD DIGITAL PRODUCTS<br/>WHERE SYSTEMS, DESIGN<br/>AND AI MEET.</h2>
       </div>
       <div className="intro-grid">
-        <figure className="feature-media"><img src="/work/build-3.jpg" alt="A Roblox environment designed by Arif"/><figcaption>SELECTED ENVIRONMENT / ROBLOX STUDIO</figcaption></figure>
+        <figure className="feature-media"><img src="/work/forest-road.png" alt="A Roblox forest road environment designed by Arif"/><figcaption>SELECTED ENVIRONMENT / ROBLOX STUDIO</figcaption></figure>
         <div className="copy-stack">
           <p>I’m Arif Iskandar, a Diploma in Computer Science graduate from UTeM, currently pursuing a Software Engineering degree at UTeM in Melaka, Malaysia (CGPA 3.47).</p>
           <p>My current work spans frontend and backend systems, Firebase architecture, Android AI agents, and interactive systems for Roblox. I’m especially focused on agentic AI, Vertex AI and local models.</p>
