@@ -143,8 +143,8 @@ function App() {
       <div className="intro-grid">
         <figure className="feature-media"><img src="/work/build-3.jpg" alt="A Roblox environment designed by Arif"/><figcaption>SELECTED ENVIRONMENT / ROBLOX STUDIO</figcaption></figure>
         <div className="copy-stack">
-          <p>I’m Arif Iskandar, a digital and computer systems student at UTeM in Melaka, Malaysia.</p>
-          <p>My current work spans React and Firebase products, Android AI agents, and interactive systems for Roblox. I care about the complete path from architecture to the interface people actually use.</p>
+          <p>I’m Arif Iskandar, a Diploma in Computer Science graduate from UTeM, currently pursuing a Software Engineering degree at UTeM in Melaka, Malaysia (CGPA 3.47).</p>
+          <p>My current work spans frontend and backend systems, Firebase architecture, Android AI agents, and interactive systems for Roblox. I’m especially focused on agentic AI, Vertex AI and local models.</p>
           <p>I learn by shipping: building the system, testing real flows, refining the rough edges and making the final experience feel considered.</p>
           <div className="description-footer"><span>INTRODUCTION</span><b>○</b></div>
         </div>
@@ -210,7 +210,15 @@ function App() {
     <section id="contact" className="contact">
       <p>HAVE AN IDEA WORTH BUILDING?</p>
       <h2>LET’S MAKE<br/>SOMETHING<br/>MEMORABLE.</h2>
-      <a className="contact-link" href="mailto:arif.iskandar275@gmail.com">START A CONVERSATION <b>↗</b></a>
+      <div className="contact-actions">
+        <span className="contact-label">START A CONVERSATION</span>
+        <div className="contact-buttons">
+          <a className="contact-button" href="https://discord.com/users/490775342261469199" target="_blank" rel="noreferrer" aria-label="Open Discord"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 5.1A16.3 16.3 0 0 0 15.7 4l-.5 1a14.5 14.5 0 0 0-2.4-.2c-.8 0-1.6.1-2.4.2l-.5-1a16.3 16.3 0 0 0-3.8 1.1C3.7 8.5 3 11.8 3.2 15c1.6 1.2 3.2 1.9 4.8 2.4l1.1-1.5c-.6-.2-1.2-.5-1.7-.8l.4-.3c3.3 1.5 6.9 1.5 10.2 0l.4.3c-.5.3-1.1.6-1.7.8l1.1 1.5c1.6-.5 3.2-1.2 4.8-2.4.3-3.8-.6-7.1-3.1-9.9ZM9.4 13.5c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Zm5.2 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.8.9 1.8 2-.8 2-1.8 2Z"/></svg><span>DISCORD</span></a>
+          <a className="contact-button" href="https://www.roblox.com/users/profile?username=kingarif275" target="_blank" rel="noreferrer" aria-label="Open Roblox profile"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 14-3 3 14-14 3L5 5Zm5.2 5.4 4.2-.9.9 4.2-4.2.9-.9-4.2Z"/></svg><span>ROBLOX</span></a>
+          <a className="contact-button" href="https://mail.google.com/mail/?view=cm&fs=1&to=arif.iskandar275@gmail.com" target="_blank" rel="noreferrer" aria-label="Email Arif with Gmail"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5Zm2 2v10h14V7l-7 5-7-5Zm1.5 0L12 10.4 17.5 7H6.5Z"/></svg><span>GMAIL</span></a>
+          <a className="contact-button" href="https://wa.me/601160654942" target="_blank" rel="noreferrer" aria-label="Message Arif on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a8.5 8.5 0 0 0-7.3 12.8L3 21l5.4-1.7A8.5 8.5 0 1 0 12 3Zm0 2a6.5 6.5 0 0 1 5.6 9.8c-.9 1.5-2.5 2.7-4.3 3.1l-1 .2-2.5.8.8-2.4.3-.9A6.5 6.5 0 0 1 12 5Zm-2.2 3.3c-.2 0-.5.1-.7.4-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.6 3.9 3.5 1.9.8 2.3.6 2.7.5.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.3-.2-.7-.4l-1.3-.6c-.3-.1-.5-.1-.7.2l-.5.7c-.2.2-.3.2-.6.1-.3-.1-1.1-.4-1.8-1-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.4.1-.5l.3-.4c.1-.2.1-.3.2-.5 0-.2 0-.4-.1-.5l-.6-1.4c-.1-.4-.3-.6-.5-.6Z"/></svg><span>WHATSAPP</span></a>
+        </div>
+      </div>
     </section>
 
     <footer><a href="#top">ARIF ISKANDAR</a><p>DEVELOPER / BUILDER / DESIGNER</p><p>© {new Date().getFullYear()} — MELAKA, MALAYSIA</p><a href="#top">BACK TO TOP ↑</a></footer>
