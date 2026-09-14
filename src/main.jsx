@@ -145,7 +145,7 @@ function App() {
 
     <Chapter number="01" title="INTRODUCTION" className="intro" >
       <div id="about" className="statement reveal">
-        <h2>I BUILD DIGITAL PRODUCTS<br/>WHERE SYSTEMS, DESIGN<br/>AND AI MEET.</h2>
+        <h2 className="terminal-title">I BUILD DIGITAL PRODUCTS<br/>WHERE SYSTEMS, DESIGN<br/>AND AI MEET.</h2>
       </div>
       <div className="intro-grid">
         <figure className="feature-media"><img src="/work/forest-road.png" alt="A Roblox forest road environment designed by Arif"/><figcaption>SELECTED ENVIRONMENT / ROBLOX STUDIO</figcaption></figure>
@@ -160,7 +160,7 @@ function App() {
 
     <Chapter number="02" title="SELECTED WORK" className="work-section">
       <div id="work" className="statement">
-        <h2>FROM TERRAIN TO SYSTEMS,<br/>I MAKE EXPERIENCES<br/>THAT FEEL ALIVE.</h2>
+        <h2 className="terminal-title">FROM TERRAIN TO SYSTEMS,<br/>I MAKE EXPERIENCES<br/>THAT FEEL ALIVE.</h2>
       </div>
       <div className="project-grid" id="projects">
         {projects.map((p, i) => <a className={`project-card card-${i+1}`} href={p.url} target={p.url.startsWith('http')?'_blank':undefined} rel="noreferrer" key={p.title}>
@@ -172,7 +172,7 @@ function App() {
     </Chapter>
 
     <Chapter number="03" title="APPROACH" className="values">
-      <div className="statement"><h2>NEW IDEAS DESERVE<br/>THOUGHTFUL SYSTEMS.</h2></div>
+      <div className="statement"><h2 className="terminal-title">NEW IDEAS DESERVE<br/>THOUGHTFUL SYSTEMS.</h2></div>
       <div className="value-grid">
         <article><span>01</span><h3>BUILD WITH PURPOSE.</h3><p>Start from the experience. Every visual and technical choice should make the final interaction clearer.</p></article>
         <article><span>02</span><h3>MAKE IT YOURS.</h3><p>References are a starting point. The strongest work carries a specific voice, not a generic template.</p></article>
@@ -181,7 +181,7 @@ function App() {
     </Chapter>
 
     <Chapter number="04" title="EXPERIENCE" className="experience">
-      <div id="experience" className="statement"><h2>THE WORK IS<br/>THE EXPERIENCE.</h2></div>
+      <div id="experience" className="statement"><h2 className="terminal-title">THE WORK IS<br/>THE EXPERIENCE.</h2></div>
       <div className="experience-list" id="roblox-experience">
         {experience.map(item => <article className="experience-card" key={item.name}>
           <div className="experience-meta"><span>{item.index}</span><b>{item.type}</b></div>
@@ -203,7 +203,7 @@ function App() {
 
     <section className="recognition" id="recognition">
       <div className="chapter-label"><span>05</span><b>RECOGNITION</b></div>
-      <div className="statement"><h2>PROOF OF<br/>CURIOSITY.</h2></div>
+      <div className="statement"><h2 className="terminal-title">PROOF OF<br/>CURIOSITY.</h2></div>
       <div className="recognition-list">
         <article><span>2021—2022 / NATIONAL</span><h3>MAXIS eKELAS Misi Jelajah Digital</h3><p>Grand Prize winner — one of four students recognised nationwide. The winning work explored Malay-culture houses, townships and islands through a Roblox-based STEM simulation.</p><a href="https://www.maxis.com.my/en/about-maxis/newsroom/2022/april/maxis-ekelas-awards-most-innovative-space-explorers-in-inaugural-stem-competition-for-students.html" target="_blank" rel="noreferrer">ARIF / OFFICIAL FEATURE ↗</a></article>
         <article><span>2025 / OPEN SOURCE</span><h3>BETTERCHAT V4 CONTRIBUTOR</h3><p>Publicly credited for UI fixes, bubble and billboard synchronisation, multiline messages, hover resizing, colour consistency, interface restructuring and an animated context menu.</p><a href="https://devforum.roblox.com/t/betterchat-v4-continued-development/3738472" target="_blank" rel="noreferrer">PUBLIC CREDITS ↗</a></article>
@@ -216,7 +216,7 @@ function App() {
 
     <section id="contact" className="contact">
       <p>HAVE AN IDEA WORTH BUILDING?</p>
-      <h2>LET’S MAKE<br/>SOMETHING<br/>MEMORABLE.</h2>
+      <h2 className="terminal-title">LET’S MAKE<br/>SOMETHING<br/>MEMORABLE.</h2>
       <div className="contact-actions">
         <span className="contact-label">START A CONVERSATION</span>
         <div className="contact-buttons">
