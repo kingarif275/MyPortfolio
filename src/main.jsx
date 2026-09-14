@@ -194,6 +194,19 @@ function App() {
       </div>
     </Chapter>
 
+    <section className="recognition" id="recognition">
+      <div className="chapter-label"><span>05</span><b>RECOGNITION</b></div>
+      <div className="statement"><h2>PROOF OF<br/>CURIOSITY.</h2></div>
+      <div className="recognition-list">
+        <article><span>2022 / NATIONAL</span><h3>MAXIS eKELAS Misi Jelajah Digital</h3><p>Grand Prize winner — one of four students recognised nationwide. The winning work explored Malay-culture houses, townships and islands through a Roblox-based STEM simulation.</p><a href="https://www.maxis.com.my/en/about-maxis/newsroom/2022/april/maxis-ekelas-awards-most-innovative-space-explorers-in-inaugural-stem-competition-for-students.html" target="_blank" rel="noreferrer">OFFICIAL FEATURE ↗</a></article>
+        <article><span>2025 / OPEN SOURCE</span><h3>BETTERCHAT V4 CONTRIBUTOR</h3><p>Publicly credited for UI fixes, bubble and billboard synchronisation, multiline messages, hover resizing, colour consistency, interface restructuring and an animated context menu.</p><a href="https://devforum.roblox.com/t/betterchat-v4-continued-development/3738472" target="_blank" rel="noreferrer">PUBLIC CREDITS ↗</a></article>
+        <article><span>2025 / GAME JAM</span><h3>ROBLOX INSPIRE</h3><p>Participant and team organiser for the 2025 Inspire Challenge, helping assemble a development team and build a game under the event brief.</p><a href="https://devforum.roblox.com/t/roblox-inspire-2025/3809748?page=7" target="_blank" rel="noreferrer">EVENT DISCUSSION ↗</a></article>
+        <article><span>2025—2026 / CREDENTIALS</span><h3>GOOGLE CLOUD FOUNDATIONS</h3><p>Completed credentials covering data, machine learning and AI, networking and security, infrastructure, secure network design, ML APIs and application development environments.</p><a href="https://www.cloudskillsboost.google/" target="_blank" rel="noreferrer">CREDENTIALS ↗</a></article>
+        <article><span>2026 / GLOBAL SHORTLIST</span><h3>NOTHING ESSENTIAL LAB</h3><p>Shortlisted in the global Top 50 for Essential Lab Season 1. Listed as a shortlist distinction, not a final winner claim.</p><a href="https://nothing.community/d/52838-essential-lab-season-1-student-contest/82" target="_blank" rel="noreferrer">CONTEST RECORD ↗</a></article>
+        <article><span>2026 / AI HACKATHON</span><h3>HACKATHON SEDIA!</h3><p>Participant at the GDGoC Multimedia University AI hackathon in Cyberjaya, building solutions for real-world challenges.</p><a href="https://gdg.community.dev/events/details/google-gdg-on-campus-multimedia-university-selangor-malaysia-presents-hackathon-sedia/" target="_blank" rel="noreferrer">EVENT PAGE ↗</a></article>
+      </div>
+    </section>
+
     <section id="contact" className="contact">
       <p>HAVE AN IDEA WORTH BUILDING?</p>
       <h2>LET’S MAKE<br/>SOMETHING<br/>MEMORABLE.</h2>
