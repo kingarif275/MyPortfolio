@@ -131,7 +131,7 @@ function App() {
       <div className="shape shape-red"/><div className="shape shape-yellow"/><div className="shape shape-blue"/><div className="shape shape-orange"/>
       <WaveGrid />
       <h1 id="hero-title" className="sr-only">Arif Iskandar — developer and builder</h1>
-      <DotWord word="arif" label="arif" />
+      <div className="dot-word" aria-label="arif">arif</div>
       <p className="hero-kicker">WEB APPS <span>+</span> AI AGENTS <span>+</span> INTERACTIVE SYSTEMS</p>
       <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><b>↓</b></a>
     </section>
@@ -205,3 +205,4 @@ function App() {
 }
 
 createRoot(document.getElementById('root')).render(<App />)
+
