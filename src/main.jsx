@@ -219,6 +219,7 @@ function App() {
           <a className="contact-button" href="https://wa.me/601160654942" target="_blank" rel="noreferrer" aria-label="Message Arif on WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a8.5 8.5 0 0 0-7.3 12.8L3 21l5.4-1.7A8.5 8.5 0 1 0 12 3Zm0 2a6.5 6.5 0 0 1 5.6 9.8c-.9 1.5-2.5 2.7-4.3 3.1l-1 .2-2.5.8.8-2.4.3-.9A6.5 6.5 0 0 1 12 5Zm-2.2 3.3c-.2 0-.5.1-.7.4-.2.3-.8.8-.8 1.9s.8 2.2.9 2.4c.1.2 1.6 2.6 3.9 3.5 1.9.8 2.3.6 2.7.5.4 0 1.3-.5 1.5-1 .2-.5.2-.9.1-1-.1-.1-.3-.2-.7-.4l-1.3-.6c-.3-.1-.5-.1-.7.2l-.5.7c-.2.2-.3.2-.6.1-.3-.1-1.1-.4-1.8-1-.6-.5-1-1.1-1.1-1.3-.1-.2 0-.4.1-.5l.3-.4c.1-.2.1-.3.2-.5 0-.2 0-.4-.1-.5l-.6-1.4c-.1-.4-.3-.6-.5-.6Z"/></svg><span>WHATSAPP</span></a>
         </div>
       </div>
+      <div className="support-row"><span>BUY ME A COFFEE</span><div className="support-buttons"><a className="support-button wise" href="https://wise.com/" target="_blank" rel="noreferrer" aria-label="Support via Wise">W</a><a className="support-button paypal" href="https://www.paypal.com/" target="_blank" rel="noreferrer" aria-label="Support via PayPal">P</a></div></div>
     </section>
 
     <footer><a href="#top">ARIF ISKANDAR</a><p>DEVELOPER / BUILDER / DESIGNER</p><p>© {new Date().getFullYear()} — MELAKA, MALAYSIA</p><a href="#top">BACK TO TOP ↑</a></footer>
