@@ -80,10 +80,25 @@ function DotWord({ word, label }) {
       <i key={`${x}-${y}`} className={cell === '1' ? 'on' : ''} />))}</div>)}</div>
 }
 
+function WaveGrid() {
+  const ref = React.useRef(null)
+  useEffect(() => {
+    const canvas = ref.current
+    const ctx = canvas.getContext('2d')
+    let frame = 0
+    let pointer = { x: 0.5, y: 0.5 }
+    const resize = () => { const dpr = window.devicePixelRatio || 1; canvas.width = innerWidth*dpr; canvas.height = innerHeight*dpr; canvas.style.width = `${innerWidth}px`; canvas.style.height = `${innerHeight}px`; ctx.setTransform(dpr,0,0,dpr,0,0) }
+    const move = e => { pointer = { x: e.clientX / innerWidth, y: e.clientY / innerHeight } }
+    const draw = () => { ctx.clearRect(0,0,innerWidth,innerHeight); ctx.strokeStyle='rgba(120,120,120,.18)'; ctx.lineWidth=1; const step=Math.max(24, innerWidth/52); const amp=Math.min(42, innerWidth*.035); for(let x=-step;x<innerWidth+step;x+=step){ctx.beginPath(); for(let y=0;y<innerHeight;y+=12){const dx=(x-innerWidth*pointer.x)/innerWidth; const dy=(y-innerHeight*pointer.y)/innerHeight; const wave=Math.sin(y*.018+dx*5+frame*.012)*amp*Math.exp(-(dx*dx+dy*dy)*2); const px=x+wave; y===0?ctx.moveTo(px,y):ctx.lineTo(px,y)} ctx.stroke()} for(let y=0;y<innerHeight;y+=step){ctx.beginPath(); for(let x=0;x<innerWidth;x+=12){const dx=(x-innerWidth*pointer.x)/innerWidth; const dy=(y-innerHeight*pointer.y)/innerHeight; const wave=Math.sin(x*.018+dy*5+frame*.012)*amp*Math.exp(-(dx*dx+dy*dy)*2); const py=y+wave; x===0?ctx.moveTo(x,py):ctx.lineTo(x,py)} ctx.stroke()} frame=requestAnimationFrame(draw) }
+    resize(); addEventListener('resize',resize); addEventListener('pointermove',move); frame=requestAnimationFrame(draw); return()=>{cancelAnimationFrame(frame);removeEventListener('resize',resize);removeEventListener('pointermove',move)}
+  }, [])
+  return <canvas ref={ref} className="wave-grid" aria-hidden="true" />
+}
+
 function Header() {
   const [open, setOpen] = useState(false)
   return <header className="header">
-    <a className="brand" href="#top" aria-label="Arif Iskandar, home"><span>A</span><b>ARIF<br/>ISKANDAR</b></a>
+    <a className="brand" href="#top" aria-label="Arif Iskandar, home"><b>ARIF<br/>ISKANDAR</b></a>
     <nav className={open ? 'open' : ''} aria-label="Primary navigation">
       <a href="#about" onClick={() => setOpen(false)}>ABOUT</a>
       <a href="#work" onClick={() => setOpen(false)}>WORK</a>
@@ -114,7 +129,7 @@ function App() {
     <Header />
     <section className="hero" aria-labelledby="hero-title">
       <div className="shape shape-red"/><div className="shape shape-yellow"/><div className="shape shape-blue"/><div className="shape shape-orange"/>
-      <div className="grid-scribble" aria-hidden="true" />
+      <WaveGrid />
       <h1 id="hero-title" className="sr-only">Arif Iskandar — developer and builder</h1>
       <DotWord word="ARIF" label="ARIF" />
       <p className="hero-kicker">WEB APPS <span>+</span> AI AGENTS <span>+</span> INTERACTIVE SYSTEMS</p>
@@ -131,6 +146,7 @@ function App() {
           <p>I’m Arif Iskandar, a digital and computer systems student at UTeM in Melaka, Malaysia.</p>
           <p>My current work spans React and Firebase products, Android AI agents, and interactive systems for Roblox. I care about the complete path from architecture to the interface people actually use.</p>
           <p>I learn by shipping: building the system, testing real flows, refining the rough edges and making the final experience feel considered.</p>
+          <div className="description-footer"><span>INTRODUCTION</span><b>○</b></div>
         </div>
       </div>
     </Chapter>
@@ -143,7 +159,7 @@ function App() {
         {projects.map((p, i) => <a className={`project-card card-${i+1}`} href={p.url} target={p.url.startsWith('http')?'_blank':undefined} rel="noreferrer" key={p.title}>
           <img src={p.image} alt={`${p.title} project preview`} />
           <span className="project-index">0{i+1}</span>
-          <div><small>{p.label}</small><h3>{p.title}</h3></div><b className="project-arrow">↗</b>
+          <div><small>{p.label}</small><h3 className="typing-title">{p.title}</h3></div><b className="project-arrow">↗</b>
         </a>)}
       </div>
     </Chapter>
@@ -163,7 +179,7 @@ function App() {
         {experience.map(item => <article className="experience-card" key={item.name}>
           <div className="experience-meta"><span>{item.index}</span><b>{item.type}</b></div>
           <div className="experience-body">
-            <h3>{item.name}</h3>
+            <h3 className="typing-title">{item.name}</h3>
             <p>{item.summary}</p>
             <ul aria-label={`${item.name} technologies`}>{item.stack.map(tag => <li key={tag}>{tag}</li>)}</ul>
           </div>
@@ -179,7 +195,6 @@ function App() {
     </Chapter>
 
     <section id="contact" className="contact">
-      <div className="contact-mark">A<span>✳</span></div>
       <p>HAVE AN IDEA WORTH BUILDING?</p>
       <h2>LET’S MAKE<br/>SOMETHING<br/>MEMORABLE.</h2>
       <a className="contact-link" href="mailto:arif.iskandar275@gmail.com">START A CONVERSATION <b>↗</b></a>
