@@ -4,10 +4,10 @@ import './styles.css'
 
 const projects = [
   { title: 'Terrain worlds', label: 'ENVIRONMENT DESIGN', image: '/work/forest-bridge.png', url: '#work' },
-  { title: 'Interface systems', label: 'UI / SCRIPTING', image: '/work/ui-1.jpg', url: '#work' },
+  { title: 'Interface systems', label: 'UI / SCRIPTING', image: '/work/interface-systems.png', url: '#work' },
   { title: 'Gameplay architecture', label: 'SERVER SYSTEMS', image: '/work/build-1.jpg', url: '#experience' },
   { title: 'World building', label: 'ROBLOX STUDIO', image: '/work/stone-arch.png', url: '#work' },
-  { title: 'Interaction design', label: 'PRODUCT UI', image: '/work/ui-2.jpg', url: '#work' },
+  { title: 'Interaction design', label: 'PRODUCT UI', image: '/work/interaction-design.png', url: '#work' },
   { title: 'Visual direction', label: 'DESIGN', image: '/work/forest-road-wide.png', url: '#work' },
 ]
 
