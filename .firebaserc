@@ -1,0 +1,4 @@
+{
+  "projects": { "default": "this-is-arif" },
+  "targets": { "this-is-arif": { "hosting": { "this-is-arif": ["this-is-arif"] } } }
+}
