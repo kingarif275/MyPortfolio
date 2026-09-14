@@ -36,7 +36,7 @@ const experience = [
     name: 'ROUI TOOLKIT',
     summary: 'A Roblox Studio plugin that scans interfaces, ranks UI issues by severity and produces actionable audit reports without modifying a creator’s game.',
     stack: ['LUAU', 'ROJO', 'PLUGIN UI', 'AUTOMATED CHECKS'],
-    url: 'https://github.com/kingarif275/RoUI-Toolkit',
+    url: 'https://devforum.roblox.com/t/betterchat-v4-continued-development/3738472/8?u=kingarif275',
     action: 'VIEW SOURCE',
   },
   {
