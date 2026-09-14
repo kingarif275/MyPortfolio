@@ -76,7 +76,7 @@ function DotWord({ word, label }) {
     F:['11111','10000','10000','11110','10000','10000','10000'],
   }), [])
   return <div className="dot-word" role="img" aria-label={label}>{word.split('').map((letter, n) =>
-    <div className="dot-letter" key={`${letter}-${n}`}>{letters[letter].flatMap((row, y) => row.split('').map((cell, x) =>
+    <div className="dot-letter" key={`${letter}-${n}`}>{letters[letter.toUpperCase()].flatMap((row, y) => row.split('').map((cell, x) =>
       <i key={`${x}-${y}`} className={cell === '1' ? 'on' : ''} />))}</div>)}</div>
 }
 
@@ -131,7 +131,7 @@ function App() {
       <div className="shape shape-red"/><div className="shape shape-yellow"/><div className="shape shape-blue"/><div className="shape shape-orange"/>
       <WaveGrid />
       <h1 id="hero-title" className="sr-only">Arif Iskandar — developer and builder</h1>
-      <DotWord word="ARIF" label="ARIF" />
+      <DotWord word="arif" label="arif" />
       <p className="hero-kicker">WEB APPS <span>+</span> AI AGENTS <span>+</span> INTERACTIVE SYSTEMS</p>
       <a className="scroll-cue" href="#about"><span>SCROLL TO EXPLORE</span><b>↓</b></a>
     </section>
